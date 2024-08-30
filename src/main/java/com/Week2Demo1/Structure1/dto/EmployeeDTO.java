@@ -21,7 +21,7 @@ public class EmployeeDTO {
     @Size(min=1 , max=10 , message = "No of characters should be in the range ")
     public String name;
 
-    @Email(message = "Email should be a valid email")
+    @Email(message = "Email should be a valid & unique email")
     @NotNull
     public String email;
 
